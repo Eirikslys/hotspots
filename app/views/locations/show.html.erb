@@ -1,0 +1,15 @@
+<div class="card-trip">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-trip-infos">
+    <div>
+      <h1>Location:</h1>
+      <h1><strong><%= @location.name %><strong></h1>
+      <p><%= @location.address %></p>
+      <p><%= @location.description %></p>
+     
+      
+    </div>
+    <h2 class="card-trip-pricing"> <p><%= @location.price %></p></h2>
+    <%= link_to "Back", locations_path %>
+  </div>
+</div>
