@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   # With the routing below the page to create a new rental is accessed from the locations
-  resources :locations, only [:index, :show, :new, :create] do
-    resources :rentals, only [:new, :create]
+  resources :locations, only: [:index, :show, :new, :create] do
+    resources :rentals, only: [:new, :create]
   end
 
   # Custom path that creates a /dashboard page with a action in the pages controller.
