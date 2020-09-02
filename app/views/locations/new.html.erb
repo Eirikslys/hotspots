@@ -1,0 +1,9 @@
+<h1> Create a page for you new location </h1>
+
+<%= simple_form_for @location do |f| %>
+  <%= f.input :name, label: 'Enter the name of the location', error: 'Location-name is mandatory, please specify one'%>
+  <%= f.input :address, label: 'Enter the address of your location', error: 'Address is mandatory, please specify one'%>
+  <%= f.input :description, label: 'Give a description of your location', error: 'Description is mandatory, please specify one'%>
+  <%= f.input :price , label: 'Enter the correct price of the rental', error: 'Price is mandatory, please specify one'%>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
