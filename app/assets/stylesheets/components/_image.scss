@@ -1,12 +1,13 @@
 .bg-img {
-  background-image: image-url('room.png');
-  min-height: 150px;
+  background-image: image-url('globus.webp');
+  min-height: 100px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
   background: contain;
-  background-position: 5% 60%;
+  background-position: right;
+  background-color: rgb(6, 6, 6);
 }
 
 .container {
