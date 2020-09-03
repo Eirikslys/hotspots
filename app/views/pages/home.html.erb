@@ -1,6 +1,3 @@
-
-<%= render 'shared/navbar' %>
-
 <div class="banner home-image" style="background-image: url(https://images.unsplash.com/photo-1575421193966-2531194d4692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
   <div class="container">
     <h1>Share your <strong>hotspots</strong> with the world!</h1>
@@ -9,6 +6,6 @@
     <br>
     <p>Exclusive backyards, funky lofts or maybe a view to die for?</p>
     <br>
-    <a class="btn btn-flat" href="#">Sign up here!</a>
+    <%= link_to "Sign up here!", new_user_registration_path %>
   </div>
 </div>
