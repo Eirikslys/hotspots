@@ -1,3 +1,11 @@
+.home-image {
+  height: 100vh;
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
 .banner {
   background-size: cover;
   background-position: center;

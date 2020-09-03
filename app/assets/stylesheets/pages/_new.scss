@@ -1,0 +1,29 @@
+.flex-header {
+  color:white;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  text-shadow: 1.5px 1.5px #215B7C;
+}
+
+.home-page {
+  background-image: url("https://images.pexels.com/photos/2101086/pexels-photo-2101086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 100vh;
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  // padding-bottom: 120px;
+}
+
+.location-form {
+  color: white;
+  text-shadow: 1px 1px grey;
+
+}
+
