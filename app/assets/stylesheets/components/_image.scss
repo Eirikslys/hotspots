@@ -1,14 +1,14 @@
-.bg-img {
-  background-image: image-url('globus.webp');
-  min-height: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  background: contain;
-  background-position: right;
-  background-color: rgb(6, 6, 6);
-}
+// .bg-img {
+//   background-image: image-url('globus.webp');
+//   min-height: 100px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: relative;
+//   background: contain;
+//   background-position: right;
+//   background-color: rgb(6, 6, 6);
+// }
 
 .container {
   position: absolute;
@@ -19,6 +19,9 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
 }
 
 .topnav a {
