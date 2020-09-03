@@ -1,7 +1,8 @@
 <div class="cards">
   <%@locations.each do |location| %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <h2><%= location.name %></h2>
+      <h2 class = "show-name"><%= location.name %></h2>
+      <a class="btn btn-flat btn-index" href="<%=location_path(location)%>"><%= location.price %></a>
     </div>
   <% end %>
 </div>
