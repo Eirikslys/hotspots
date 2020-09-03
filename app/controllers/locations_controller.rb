@@ -14,6 +14,7 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(location_params)
+    @location.user = current_user
     @location.save
     redirect_to locations_path(@location)
   end
@@ -21,6 +22,6 @@ class LocationsController < ApplicationController
   private
 
   def location_params
-    params.require(:location).permit(:name, :adress, :description, :price)
+    params.require(:location).permit(:name, :address, :description, :price)
   end
 end
