@@ -15,7 +15,7 @@
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1.5px 1.5px #745A51;
   font-size: 32px;
   font-weight: bold;
 }
@@ -23,19 +23,25 @@
 .banner p {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px #745A51;
   font-size: 18px;
   font-weight: ligther;
+  letter-spacing: 2px;
+
 }
 
 .banner h1 strong {
   color: white;
-  font-family: 'Lexend Peta', sans-serif;;
+  // font-family: 'Lexend Peta', sans-serif;;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 4px;
+
+  text-shadow: 1px 1px 0 #745A51;
 }
 
 .btn-flat {
   color: white;
+  text-shadow: 1px 1px #745A51;
   margin: 8px;
   padding: 8px 24px;
   border-radius: 4px;
@@ -44,11 +50,10 @@
 }
 
 .btn-flat:hover {
-  background: EDF7D2;
   margin: 8px;
   border-color: white;
-  color: grey;
 }
+
 
 .cards {
   display: grid;
