@@ -1,11 +1,8 @@
-<div class="bg-img">
-  <div class="container">
+<!-- <div class="bg-img"> -->
     <div class="topnav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#messages">Messages</a>
-      <a href="locations">My locations</a>
-      <a href="#Sign out">Sign out</a>
+      <%= link_to "Home", root_path %>
+      <%= link_to "My account", dashboard_path %>
+      <%= link_to "Locations to rent", locations_path %>
+      <%= link_to "Sign out", destroy_user_session_path, :method => 'delete'%>
     </div>
-  </div>
-</div>
+<!-- </div> -->

@@ -1,7 +1,16 @@
-<div class="cards">
-  <%@locations.each do |location| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <h2><%= location.name %></h2>
-    </div>
-  <% end %>
+<div class="index-page" style="background-image: url(https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+  <div class="cards">
+    <%@locations.each do |location| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/577697/pexels-photo-577697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+        <h2 class="show-name"><%= location.name %></h2>
+        <%= link_to location.price, location_path(location), class: "btn btn-flat btn-index" %>
+      </div>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to 'Create a new location', new_location_path, class: "btn btn-flat btn-create " %>
+  </div>
 </div>
+
+
+

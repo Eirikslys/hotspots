@@ -8,8 +8,8 @@
   background-position: center;
   height: 180px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: space-between;
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -18,10 +18,25 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.show-name {
+  align-self: flex-start;
+  justify-self: flex-end;
+  margin: 10px;
+}
+
+.btn-index {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  align-items: center;
+  padding-top: 115px;
+  margin: 20px;
+
 }
 
 // Smallest device
@@ -58,3 +73,17 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.index-page {
+  background-image: url("https://images.pexels.com/photos/2101086/pexels-photo-2101086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 100vh;
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+ }
+
+ .btn-create {
+  color:black;
+  border-color: grey;
+ }
