@@ -1,15 +1,15 @@
-<div class="card-trip">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <div class="card-trip-infos">
-    <div>
-      <h1>Location:</h1>
-      <h1><strong><%= @location.name %><strong></h1>
-      <p><%= @location.address %></p>
-      <p><%= @location.description %></p>
-
+<div class="card-product">
+  <img src="https://images.unsplash.com/photo-1582574643306-d00ea3f7d49b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+  <div class="card-product-infos">
+    <h2><%= @location.name %></h2>
+    <hr />
+    <p><%= @location.description %></p>
+    <p><%= @location.address %></p>
+    <p><%= @location.price %></p>
+    <div class="center">
+    <%= link_to "Book now!", new_location_rental_path(@location), class: " btn btn-book" %>
 
     </div>
-    <h2 class="card-trip-pricing"> <p><%= @location.price %></p></h2>
-    <%= link_to "Back", locations_path %>
   </div>
+    <%= link_to "Back", locations_path(@location) %>
 </div>
