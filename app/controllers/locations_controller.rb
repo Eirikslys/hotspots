@@ -1,7 +1,15 @@
 class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
   def index
-    @locations = Location.all
+    @locations = Location.geocoded
+
+    # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
+    @markers = @locations.map do |location|
+      {
+        lat: location.latitude,
+        lng: location.longitude
+      }
+    end
   end
 
   def show
