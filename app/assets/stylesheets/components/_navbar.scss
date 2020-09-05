@@ -17,6 +17,7 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0px;
+  z-index: 1000;
 }
 
 .topnav a {
