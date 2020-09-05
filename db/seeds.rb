@@ -30,9 +30,25 @@ puts User.all
 
 # Generate locations, owndership by users is assigned randomly
 puts "creating locations"
+file = File.open("app/assets/images/garden.jpg")
 Location.create!(name:"A secret garden", user: User.all.sample, address: "Braakmakergaten 27", price: "299$", description:"Enact a romantic rendesvouz or dramatic meeting in our wellkept walled garden, complete with statues")
-Location.create!(name:"Cocaine mansion with great view", user: User.all.sample, address: "High street 477", price: "349$", description:"A mini-palace almost tastefully with authentic Chinese marble. Enact your scarface fantasy here")
+loc = Location.last
+loc.photo.attach(io: file, filename: 'garden.jpg', content_type: 'image/png')
+Location.create!(name:"Cocaine mansion with great view", user: User.all.sample, address: "High street 477", price: "349$", description:"A mini-palace almost tastefully executed with authentic Chinese marble. Live out your scarface fantasy here")
+file = File.open("app/assets/images/mansion.jpg")
+loc = Location.last
+loc.photo.attach(io: file, filename: 'mansion.jpg', content_type: 'image/png')
+
 Location.create!(name:"Cozy cabin", user: User.all.sample, address: "Timber Road 4228", price: "120$", description:"This solid lumber cabin, built in 1932, will give your pictures a homely and rustique feel. Inquire for snowscooter rental.")
+file = File.open("app/assets/images/cabin.jpg")
+loc = Location.last
+loc.photo.attach(io: file, filename: 'cabin.jpg', content_type: 'image/png')
+
+Location.create!(name:"Hyperrealistic crack den facsimile", user: User.all.sample, address: "Example alley 771", price:"99$", description: "Get the authentic crack den experience that only a real crack den offers! Only available for a limited period!")
+file = File.open("app/assets/images/den.jpg")
+loc = Location.last
+loc.photo.attach(io: file, filename: 'den.jpg', content_type: 'image/png')
+
 puts Location.all
 
 # Creating a rental for the last location
