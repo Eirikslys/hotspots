@@ -2,8 +2,10 @@
   <h1>Here are the locations you are <strong>renting</strong> out</h1> <br>
   <% @locations.each do |location| %>
     <div class="card-product">
-      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" />
-      <div class="card-product-infos">
+<!--       <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" />
+ -->
+        <%=  image_tag(location.photo)%>
+        <div class="card-product-infos">
         <h2> <i class="fas fa-angle-double-right"></i> <%= location.name %></h2>
         <p> <i class="fas fa-map-marker-alt"></i> <%= "#{location.address}" %></p>
         <p> <i class="fas fa-info-circle"></i> <%= location.description %></p>
@@ -21,5 +23,9 @@
 
       </div>
     </div>
+    <% if location.rental.last %>
+    <p> This location is rented out from <%= location.rental.last.start_date.strftime("%A, %B %d. ") %> to
+    <%= location.rental.last.end_date.strftime("%A, %B %d.") %> </p>
+    <%end %>
   <% end %>
 </div>
