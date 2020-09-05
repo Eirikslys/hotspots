@@ -1,5 +1,5 @@
 <div class="card-product">
-  <img src="https://images.unsplash.com/photo-1582574643306-d00ea3f7d49b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+    <%=  image_tag(@location.photo)%>
   <div class="card-product-infos">
     <h2><%= @location.name %></h2>
     <hr />
@@ -13,3 +13,4 @@
   </div>
     <%= link_to "Back", locations_path(@location) %>
 </div>
+
