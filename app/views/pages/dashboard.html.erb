@@ -1,14 +1,24 @@
-<h1>Dashboard</h1>
-<p> Your email: <%= current_user.email %> </p>
 <div class="cards cards-dash">
-  <h3>your locations</h3> <br>
+  <h1>Here are the locations you are <strong>renting</strong> out</h1> <br>
   <% @locations.each do |location| %>
     <div class="card-product">
-      <img src="https://picsum.photos/id/206/200/200" />
+      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" />
       <div class="card-product-infos">
-        <h2><%= location.name %></h2>
-        <p><%= location.description %></p>
-        <a class="btn btn-dash" href="#">Edit</a>
+        <h2> <i class="fas fa-angle-double-right"></i> <%= location.name %></h2>
+        <p> <i class="fas fa-map-marker-alt"></i> <%= "#{location.address}" %></p>
+        <p> <i class="fas fa-info-circle"></i> <%= location.description %></p>
+        <p> <i class="far fa-calendar-check"></i> <%= "Location is open for booking" %> </p>
+        <div class="button-wrapper">
+
+          <%= link_to(location_path(location)) do %>
+            <button class="button">
+              <%= "More info about this" %>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </button>
+          <% end %>
+        </div>
+
       </div>
     </div>
   <% end %>

@@ -7,8 +7,9 @@
   display: flex;
   margin: auto;
   margin-top: 55px;
-
+  position: relative;
 }
+
 
 .card-product img {
   width: 700px;
@@ -21,7 +22,9 @@
   font-weight: bold;
   margin: 0;
   text-decoration-style: double;
-  text-shadow: 0.1em 0.1em 0.2em rgb(170, 169, 169);
+  text-shadow: 0.1em 0.1em 0.2em rgb(224,224,224);
+  position: absolute;
+  top: 100px;
 }
 
 .card-product p {
