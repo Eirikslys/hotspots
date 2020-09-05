@@ -1,11 +1,13 @@
 <div class="card-product">
-    <%=  image_tag(@location.photo)%>
-  <div class="card-product-infos">
     <h2><%= @location.name %></h2>
     <hr />
+    <%=  image_tag(@location.photo)%>
+  <div class="card-product-infos">
+    
     <p><%= @location.description %></p>
     <p><%= @location.address %></p>
     <p><%= @location.price %></p>
+   
     <div class="center">
     <%= link_to "Book now!", new_location_rental_path(@location), class: " btn btn-book" %>
 
