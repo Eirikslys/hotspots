@@ -38,7 +38,7 @@ file = File.open("app/assets/images/garden.jpg")
 Location.create!(name:"A secret garden", user: User.all.sample, address: "Braakmakergaten 27", price: "299$", description:"Enact a romantic rendesvouz or dramatic meeting in our wellkept walled garden, complete with statues")
 loc = Location.last
 loc.photo.attach(io: file, filename: 'garden.jpg', content_type: 'image/png')
-Location.create!(name:"Coke mansion", user: User.all.sample, address: "High street 477", price: "349$", description:"A mini-palace almost tastefully executed with authentic Chinese marble. Live out your scarface fantasy here")
+Location.create!(name:"Mansion", user: User.all.sample, address: "High street 477", price: "349$", description:"A mini-palace almost tastefully executed with authentic Chinese marble. Live out your scarface fantasy here")
 file = File.open("app/assets/images/mansion.jpg")
 loc = Location.last
 loc.photo.attach(io: file, filename: 'mansion.jpg', content_type: 'image/png')
@@ -48,7 +48,7 @@ file = File.open("app/assets/images/cabin.jpg")
 loc = Location.last
 loc.photo.attach(io: file, filename: 'cabin.jpg', content_type: 'image/png')
 
-Location.create!(name:"Hyperrealistic crack den facsimile", user: User.all.sample, address: "Example alley 771", price:"99$", description: "Get the authentic crack den experience that only a real crack den offers! Only available for a limited period!")
+Location.create!(name:"Modest home", user: User.all.sample, address: "Example alley 771", price:"99$", description: "Get the authentic crack den experience that only a real crack den offers! Only available for a limited period!")
 file = File.open("app/assets/images/den.jpg")
 loc = Location.last
 loc.photo.attach(io: file, filename: 'den.jpg', content_type: 'image/png')
