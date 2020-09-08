@@ -1,4 +1,12 @@
 <div class="cards cards-dash">
+    <%= link_to(new_location_path, class: "my-a-tag") do %>
+      <button class="button btn-create-new">
+        <%= "Click here to create a page for your new location" %>
+          <div class="button__horizontal"></div>
+          <div class="button__vertical"></div>
+        </button>
+        <% end %>
+
   <h1>Here are the locations you are <strong>renting</strong> out</h1> <br>
   <% @locations.each do |location| %>
     <div class="card-product">
@@ -12,7 +20,7 @@
         <p> <i class="far fa-calendar-check"></i> <%= "Location is open for booking" %> </p>
         <div class="button-wrapper">
 
-          <%= link_to(location_path(location)) do %>
+          <%= link_to(location_path(location), class: "my-a-tag") do %>
             <button class="button">
               <%= "More info about this" %>
               <div class="button__horizontal"></div>

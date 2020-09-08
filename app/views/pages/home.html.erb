@@ -8,7 +8,15 @@
     <br>
     <p>Exclusive backyards, funky lofts or maybe a view to die for?</p>
     <br>
-    <%= link_to 'Sign up here!', new_user_registration_path, class: "btn btn-flat"%>
-
+      <%= link_to(new_user_registration_path, class: "my-a-tag") do %>
+      <button class="button btn-home-page">
+        <%= "Sign up here!" %>
+          <div class="button__horizontal"></div>
+          <div class="button__vertical"></div>
+        </button>
+        <% end %>
+    <%#= link_to 'Sign up here!', new_user_registration_path, class: "btn btn-secondary btn-lg btn-light btn-home"%>
   </div>
 </div>
+
+
