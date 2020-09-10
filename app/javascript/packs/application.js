@@ -7,6 +7,11 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("flatpickr/dist/themes/dark.css");
+
+
+import "../plugins/flatpickr"
+// this is used to make the calendar for the rental pages, t. Eirik
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
