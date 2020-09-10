@@ -11,8 +11,8 @@ class RentalsController < ApplicationController
     @rental.location = @location
     @rental.user = current_user
     if @rental.save
-      redirect_to locations_path(@location)
-      puts "success"
+      redirect_to locations_path, alert: "Your booking was succesful!  🎉 🎉 🎉"
+
     else
       render :new
     end
