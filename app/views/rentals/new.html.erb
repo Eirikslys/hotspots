@@ -2,9 +2,9 @@
   <!-- Using pt-5 to cheat the form down a little bit, probably not great but it works -->
   <div class="container pt-5">
     <div class="form-wrapper pt-5" style="width: 400px; margin: 0 auto;">
-      <%= simple_form_for [@location, @rental] do |f| %>
-        <%=f.input :start_date, as: :string, required: true, input_html: {class: "datepicker" } %>
-        <%=f.input :end_date, as: :string, required: true, input_html: {class: "datepicker"}   %>
+      <%= simple_form_for [@location, @rental], defaults: {input_html: {class: "" }} do |f| %>
+        <%=f.input :start_date, as: :string, required: true, input_html: {class: "datepicker col-lg-12 col-sm-10 col-9" } %>
+        <%=f.input :end_date, as: :string, required: true, input_html: {class: "datepicker col-lg-12 col-sm-10 col-9"}   %>
         <%= f.button :submit, class: "btn btn-primary" %>
       <% end %>
     </div>
