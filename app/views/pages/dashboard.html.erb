@@ -31,7 +31,7 @@
 
       </div>
     </div>
-    <% if location.rental.last %>
+    <% if location.rental.last.start_date %>
     <p> This location is rented out from <%= location.rental.last.start_date.strftime("%A, %B %d. ") %> to
     <%= location.rental.last.end_date.strftime("%A, %B %d.") %> </p>
     <%end %>
