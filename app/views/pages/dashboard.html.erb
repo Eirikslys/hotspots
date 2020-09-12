@@ -9,7 +9,7 @@
 
   <h1>Here are the locations you are <strong>renting</strong> out</h1> <br>
     <div class="cards">
-    <%@locations.each do |location| %>
+      <%@locations.each do |location| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=url_for(location.photo) %>)">
         <h2 class="show-name"><%= location.name %></h2>
         <%= link_to location.price, location_path(location), class: "btn btn-flat btn-secondary btn-index" %>
@@ -17,3 +17,4 @@
       <% end %>
     </div>
 </div>
+

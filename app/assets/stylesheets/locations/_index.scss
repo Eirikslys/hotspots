@@ -9,11 +9,12 @@
 // }
 
 .index-page {
-  background-image: url("https://images.pexels.com/photos/2101086/pexels-photo-2101086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: white;
   height: 100vh;
   background-position: center;
   // background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+  padding-bottom: 22px;
  }
 
