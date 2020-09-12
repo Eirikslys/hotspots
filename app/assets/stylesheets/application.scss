@@ -13,14 +13,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "components/image";
-@import "pages/new";
-@import "components/flash";
 
-@import "components/index";
-@import "pages/dashboard";
-@import "components/card";
+@import "locations/index";
 
-@import "components/devise";
 
 @import "flatpickr/dist/flatpickr";
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #484848;
+  padding-top: 32px;
+}
