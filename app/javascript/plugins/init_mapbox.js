@@ -1,7 +1,7 @@
 // importing 'mapboxgl' object from js packages
 import mapboxgl from 'mapbox-gl';
 // import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder';
-
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 // import MapboxGeocoder from 'mapbox-gl-geocoder';
 // then we grab div with with a id "map" on a page
 const initMapbox = () => {
@@ -11,7 +11,7 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v10'
+      style: 'mapbox://styles/pdunleav/cjofefl7u3j3e2sp0ylex3cyb'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
     // for each marker I can create a new mapbox marker 
