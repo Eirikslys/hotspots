@@ -23,12 +23,14 @@
   }
  }
 
+// postitions the btn in the product card
  .button-wrapper {
   position: absolute;
   width: 260px;
   bottom: 5px;
   right: 20px;
 }
+
 .button {
 
   --offset: 10px;
@@ -203,3 +205,4 @@
   align-self: flex-end;
   margin-left: auto;
 }
+
