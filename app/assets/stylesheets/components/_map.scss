@@ -7,12 +7,16 @@
 
 .mapboxgl-popup-content img {
   width: 200px;
-  
+
 }
 
 .card-list-map {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-top: 20px;
+  margin-top: 50px;
+  top: 50px;
+  overflow: hidden;
   margin-right: 40px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
