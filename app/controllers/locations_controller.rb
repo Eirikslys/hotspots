@@ -2,6 +2,7 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
   def index
     @locations = Location.geocoded
+    @locations = @locations.reverse
 
     # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
     @markers = @locations.map do |location|
