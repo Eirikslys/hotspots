@@ -3,15 +3,29 @@
   <div class="card-product-infos">
     <h2><%= @location.name %></h2>
     <hr />
-    <p><%= @location.description %></p>
-    <p><%= @location.address %></p>
-    <p><%= @location.price %></p>
-   
-    <div class="center">
-    <%= link_to "Book now!", new_location_rental_path(@location), class: " btn btn-book" %>
+    <p><i class="fas fa-info-circle"></i> <%= @location.description %></p>
+    <p><i class="fas fa-map-marker-alt"></i> <%= @location.address %></p>
+    <p><i class="fas fa-dollar-sign"></i> <%= @location.price %></p>
 
+
+
+
+    <div class="center">
+      <div class="button-wrapper">
+        <%= link_to new_location_rental_path(@location), class: "my-a-tag" do %>
+          <button class="button">
+          <%= "Book now!" %>
+          <div class="button__horizontal"></div>
+          <div class="button__vertical"></div>
+          </button>
+          <% end %>
+      </div>
+
+
+    <%#= link_to "Book now!", new_location_rental_path(@location), class: "btn button " %>
+    <br>
     </div>
+    <%= link_to "Go back to avaliable locations", locations_path(@location), class: "text-dark bg-info"%>
   </div>
-    <%= link_to "Back", locations_path(@location) %>
 </div>
 
