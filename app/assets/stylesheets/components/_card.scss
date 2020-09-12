@@ -1,19 +1,20 @@
+// for locations/index
 .card-product {
   overflow: hidden;
-  width: 1000px;
-  height: 500px;
+  width: 90%;
+  height: 400px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
+
   margin: auto;
   margin-top: 55px;
   position: relative;
 }
 
-
-// for locations/index
 .card-product img {
-  width: 700px;
+  width: 50px;
+  flex-grow: 1;
   height: 500px;
   object-fit: cover;
 }
@@ -43,6 +44,7 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+  width: 300px;
   object-fit: cover;
 }
 
@@ -59,7 +61,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   align-items: center;
   padding-top: 115px;
@@ -98,6 +100,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
