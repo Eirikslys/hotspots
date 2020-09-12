@@ -13,6 +13,12 @@
 
   <body>
     <%= render 'shared/navbar' %>
+    <% flash.each do |type, msg| %>
+      <div class="flash flash-success fade show">
+        <%= msg %>
+      </div>
+    <% end %>
+
 
     <!-- <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p> -->

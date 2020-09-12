@@ -9,8 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require("flatpickr/dist/themes/dark.css");
 
+import { flatpickerfunc } from '../plugins/flatpickr'
 
-import "../plugins/flatpickr"
 // this is used to make the calendar for the rental pages, t. Eirik
 
 
@@ -36,8 +36,12 @@ import { initMapbox } from '../plugins/init_mapbox';
 
 
 document.addEventListener('turbolinks:load', () => {
+  flatpickerfunc();
+  console.log("running here");
   initMapbox();
+
   // fitMapToMarkers(map, markers);
   // Call your functions here, e.g:
   // initSelect2();
 });
+
