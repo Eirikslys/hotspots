@@ -35,7 +35,7 @@ puts User.all
 # Generate locations, owndership by users is assigned randomly
 puts "creating locations"
 file = File.open("app/assets/images/garden.jpg")
-Location.create!(name:"A secret garden", user: User.all.sample, address: "Braakmakergaten 27", price: "299$", description:"Enact a romantic rendesvouz or dramatic meeting in our wellkept walled garden, complete with statues")
+Location.create!(name:"A secret garden", user: User.all.sample, address: "Karl Johans gate 12", price: "299$", description:"Enact a romantic rendesvouz or dramatic meeting in our wellkept walled garden, complete with statues")
 loc = Location.last
 loc.photo.attach(io: file, filename: 'garden.jpg', content_type: 'image/png')
 Location.create!(name:"Mansion", user: User.all.sample, address: "High street 477", price: "349$", description:"A mini-palace almost tastefully executed with authentic Chinese marble. Live out your scarface fantasy here")
