@@ -2,8 +2,17 @@
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   max-width: 300px;
+  max-height: 300px;
 }
 
 .mapboxgl-popup-content img {
-  width: 150px;
+  width: 200px;
+  
+}
+
+.card-list-map {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 20px;
+  margin-right: 40px;
 }
