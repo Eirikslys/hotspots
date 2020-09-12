@@ -7,7 +7,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("flatpickr/dist/themes/dark.css");
+
+// require("flatpickr/dist/themes/dark.css");
 
 import { toggleDateInputs } from '../plugins/flatpickr'
 
