@@ -1,31 +1,25 @@
-<div class="card-product">
-    <%=  image_tag(@location.photo)%>
-  <div class="card-product-infos">
-    <h2><%= @location.name %></h2>
-    <hr />
-    <p><i class="fas fa-info-circle"></i> <%= @location.description %></p>
-    <p><i class="fas fa-map-marker-alt"></i> <%= @location.address %></p>
-    <p><i class="fas fa-dollar-sign"></i> <%= @location.price %></p>
-
-
-
-
-    <div class="center">
-      <div class="button-wrapper">
+<div class="card-trip">
+  <%=  image_tag(@location.photo)%>
+  <div class="card-trip-infos" >
+    <div>
+      <h2><%= @location.name %></h2>
+      <hr />
+      <p><i class="fas fa-info-circle"></i> <%= @location.description %></p>
+      <p><i class="fas fa-map-marker-alt"></i> <%= @location.address %></p>
+      <p><i class="fas fa-dollar-sign"></i> <%= @location.price %></p>
+      <%= link_to "Go back to avaliable locations", locations_path, class: "text-dark bg-info"%>
+    </div>
+    <div class="card-trip-pricing">
+      <div id="show-button">
         <%= link_to new_location_rental_path(@location), class: "my-a-tag" do %>
           <button class="button">
           <%= "Book now!" %>
           <div class="button__horizontal"></div>
           <div class="button__vertical"></div>
           </button>
-          <% end %>
-      </div>
-
-
-    <%#= link_to "Book now!", new_location_rental_path(@location), class: "btn button " %>
-    <br>
+        <% end %>
+      <%#= link_to "Book now!", new_location_rental_path(@location), class: "btn button " %>
+      <br>
     </div>
-    <%= link_to "Go back to avaliable locations", locations_path, class: "text-dark bg-info"%>
   </div>
 </div>
-
